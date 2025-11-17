@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('https://i.pinimg.com/736x/5e/fe/7e/5efe7e9ab8ad4c77951973efa01649c2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #c8a2c8;
+  border-bottom: 1px solid #908b8b;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav li a {
+  display: block;
+  padding: 16px 20px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+nav li a:hover {
+  color: white;
+}
+
+nav li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 6px;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.2s ease;
+}
+
+nav li a:hover::after,
+nav li a.active::after {
+  width: 100%;
+}
+
+nav li a.active {
+  color: white;
+}
+
+
+.resume-box {
+  background-color: white;
+  margin: 30px auto; /* Centers the box */
+  padding: 30px;
+  max-width: 900px;
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.resume-box h2, .resume-box h3 {
+  text-align: center;
+}
+
+.resume-box h2 {
+  margin-bottom: 15px;
+}
+
+.resume-box h3 {
+  margin: 8px 0;
+  text-align: left; /* Text left-aligned for readability */
+}
+
+.section {
+  margin-bottom: 30px; /* Spacing between sections */
+}
+h1 {
+    font-family: 'Bubbleboddy', sans-serif;
+}
